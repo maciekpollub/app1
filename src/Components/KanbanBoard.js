@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import List from './List.js'
 
 class KanbanBoard extends Component {
+
     render(){
         return(
             <div className="app">

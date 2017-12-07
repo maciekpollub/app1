@@ -4,19 +4,22 @@
 import React, { Component } from 'react'
 
 class CheckList extends Component {
-    render(){
-        let tasks = this.props.tasks.map((task) => {
-           return (
-            <li key={task.id}>
-                /*<input type="checkbox" />*/
-                {task.name}
-                /*<a href="#" />*/
-            </li>
-           )
-        });
-        return(
-            <div>
-                <ul>{tasks}</ul>
+
+    renderTasks(tasks) {
+        return <div>
+            {tasks.map((task) =>
+                <li key={task.id}>
+                    <input type="checkbox" defaultChecked={task.done} />
+                    {task.name}
+                    <a href="#" className="checklist__task--remove" />
+                </li>)}
+        </div>;
+    }
+
+    render() {
+        return (
+            <div className="checklist">
+                <ul>{this.renderTasks(this.props.tasks)}</ul>
             </div>
         )
     }

@@ -3,50 +3,9 @@
  */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import KanbanBoard from './Components/KanbanBoard.js'
+import App from './Components/App.js'
 
-let cardsList = [
-    {
-        id: 1,
-        title: 'Read the book',
-        description: 'I need to read the entire book',
-        status: 'in-progress',
-        tasks: [
-            {
-                id: 1,
-                name: 'jurij'
-            }
-            ]
-    },
-    {
-        id: 2,
-        title: 'write a bit of code...',
-        description: 'I will write down the code from exercises in the book',
-        status: 'done',
-        tasks: [
-            {
-                id: 1,
-                name: 'Example of contact list',
-                done: 'true'
-            },
-            {
-                id: 2,
-                name: 'Kanban example',
-                done: 'false'
-            },
-            {
-                id: 3,
-                name: 'My experiments',
-                done: 'false'
-            }
-        ]
-    },
-    {
-        id: 3,
-        title: 'children',
-        description: 'I will pick up children from school and daycare',
-        status: 'to do'
-    },
-];
 
-ReactDOM.render(<KanbanBoard cards={cardsList} />, document.getElementById("root"));
+
+
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -6,7 +6,7 @@ import Card from './Card.js'
 
 class List extends Component {
     render() {
-        let cards = this.props.cards.map((card) => {
+        var cards = this.props.cards.map((card) => {
             return (
                 <Card key={card.id}
                         id={card.id}
