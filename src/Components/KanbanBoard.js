@@ -23,8 +23,9 @@ class KanbanBoard extends Component {
 
             </div>
 
-        )
+        );
     }
 }
 
 export default KanbanBoard;
+

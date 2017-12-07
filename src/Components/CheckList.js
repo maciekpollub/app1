@@ -6,14 +6,16 @@ import React, { Component } from 'react'
 class CheckList extends Component {
     render(){
         let tasks = this.props.tasks.map((task) => {
-            return <li className="checklist__task">
-                <input type="checkbox"/>
+           return (
+            <li key={task.id}>
+                /*<input type="checkbox" />*/
                 {task.name}
-                <a href="#" className="checklist__task--remove" />
+                /*<a href="#" />*/
             </li>
+           )
         });
         return(
-            <div className="checklist">
+            <div>
                 <ul>{tasks}</ul>
             </div>
         )
