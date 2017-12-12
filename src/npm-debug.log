@@ -23,8 +23,8 @@
 14 verbose stack     at maybeClose (internal/child_process.js:821:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid app1@0.1.0
-16 verbose cwd /home/maciej/www/app1/app1
-17 error Linux 4.10.0-40-generic
+16 verbose cwd /home/maciej/www/app1/app1/src
+17 error Linux 4.10.0-42-generic
 18 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
 19 error node v4.2.6
 20 error npm  v3.5.2
